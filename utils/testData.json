@@ -1,0 +1,27 @@
+{
+    "validUser":
+    {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    },
+
+    "invalidUser":
+    {
+        "username":"wrong_user",
+        "password":"wrong_user"
+    },
+    "emptyUser":
+    {
+        "username":"",
+        "password":""
+
+    },
+    "checkoutInfo":
+    {
+        "firstName":"Raj",
+        "lastName":"Srivastava",
+        "postalCode":"12345"
+    }
+}
+
+
