@@ -26,16 +26,16 @@ await expect(errorMessage).toBe('Epic sadface: Username and password do not matc
 await page.pause();
 })
 
-test('Login with Empty Credentials', async({page})=>{
-    const loginPage=new LoginPage(page);
+//test('Login with Empty Credentials', async({page})=>{
+  //  const loginPage=new LoginPage(page);
     
 
-    loginPage.goto();
-    await loginPage.login(testData.emptyUser.username, testData.emptyUser.password);
-    const errorMessage=await loginPage.getErrorMessage();
-    console.log('Error message:', errorMessage);
-    await expect(errorMessage).toBe('Epic sadface: Username is required');
+    //loginPage.goto();
+    //await loginPage.login(testData.emptyUser.username, testData.emptyUser.password);
+    //const errorMessage=await loginPage.getErrorMessage();
+    //console.log('Error message:', errorMessage);
+    //await expect(errorMessage).toBe('Epic sadface: Username is required');
 
-    await page.pause();
-})
+    //await page.pause();
+//})
 

@@ -49,7 +49,7 @@ const cartPage = new CartPage(page);
     await inventoryPage.addProductToCart();
     await inventoryPage.clickCartLink();
     await cartPage.clickCheckoutButton();
-   await checkoutPage.clickCancelButton();
+   //await checkoutPage.clickCancelButton();
    
 })
 

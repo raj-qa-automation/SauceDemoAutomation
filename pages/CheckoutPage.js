@@ -39,10 +39,10 @@ async checkoutOverviewTitle(){
     return overviewTitle;
 }
 
-async clickCancelButton(){
-    await this.click(this.checkoutCancelButton);
-    console.log('Clicked on cancel button');
-}
+//async clickCancelButton(){
+  //  await this.click(this.checkoutCancelButton);
+    //console.log('Clicked on cancel button');
+//}
 
 async clickFinishButton(){
     await this.click(this.checkoutFinishButton);
