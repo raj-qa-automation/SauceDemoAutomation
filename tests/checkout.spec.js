@@ -38,9 +38,18 @@ test("Verify Checkout Flow", async ({page}) => {
     await checkoutPage.clickContinueButton();
     await checkoutPage.clickFinishButton();
 
-    // Verify confirmation
-  const message = await checkoutPage.getConfirmationMessage();
-  console.log("Confirmation Message: ", message);
-  expect(message).toContain('Thank you for your order!');
+    await checkoutPage.checkoutCancelButton();
 
+    await checkoutPage.getConfirmationMessage();
 })
+test("Verify Checkout End to End flow with cancel", async ({page})=>{
+
+const cartPage = new CartPage(page);
+    const checkoutPage=new CheckoutPage(page);
+    await inventoryPage.addProductToCart();
+    await inventoryPage.clickCartLink();
+    await cartPage.clickCheckoutButton();
+   await checkoutPage.clickCancelButton();
+   
+})
+

@@ -18,7 +18,9 @@ async login(username, password){
 
     await this.type(this.InputUsername, username);
     await this.type(this.InputPassword, password);
-    await this.click(this.loginButton);
+    const clicked=await this.click(this.loginButton);
+    console.log("Clicked on Login Button");
+
 }
 async getErrorMessage(){
     return this.errorMessage.textContent();

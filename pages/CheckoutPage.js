@@ -1,3 +1,4 @@
+const { expect } = require('@playwright/test');
 const {BasePage} = require('../base/BasePage.js');
 
 class CheckoutPage extends BasePage{
@@ -50,7 +51,10 @@ async clickFinishButton(){
 // Verify confirmation
   
     async getConfirmationMessage(){
-    return await this.getText(this.confirmationMessage); // pass string
+    const text= await this.getText(this.confirmationMessage);
+    console.log("Confirmation Message: "+text);
+    expect(text).toContain('Thank you for your order!');
+    return text;
 }
   }
   

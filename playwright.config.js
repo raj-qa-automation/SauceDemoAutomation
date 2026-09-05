@@ -28,7 +28,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     baseURL:'https://www.saucedemo.com',
-    headless: false,
+    headless: true,
     screenshot: 'on',
     video:'retain-on-failure',
       trace: 'on-first-retry',
