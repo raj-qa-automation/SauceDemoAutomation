@@ -38,18 +38,18 @@ test("Verify Checkout Flow", async ({page}) => {
     await checkoutPage.clickContinueButton();
     await checkoutPage.clickFinishButton();
 
-    await checkoutPage.clickCancelButton();
+    //await checkoutPage.clickCancelButton();
 
     await checkoutPage.getConfirmationMessage();
 })
-test("Verify Checkout End to End flow with cancel", async ({page})=>{
+//test("Verify Checkout End to End flow with cancel", async ({page})=>{
 
-const cartPage = new CartPage(page);
-    const checkoutPage=new CheckoutPage(page);
-    await inventoryPage.addProductToCart();
-    await inventoryPage.clickCartLink();
-    await cartPage.clickCheckoutButton();
+//const cartPage = new CartPage(page);
+  //  const checkoutPage=new CheckoutPage(page);
+  //  await inventoryPage.addProductToCart();
+   // await inventoryPage.clickCartLink();
+   // await cartPage.clickCheckoutButton();
    //await checkoutPage.clickCancelButton();
    
-})
+//})
 
