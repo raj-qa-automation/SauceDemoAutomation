@@ -38,7 +38,7 @@ test("Verify Checkout Flow", async ({page}) => {
     await checkoutPage.clickContinueButton();
     await checkoutPage.clickFinishButton();
 
-    await checkoutPage.checkoutCancelButton();
+    await checkoutPage.clickCancelButton();
 
     await checkoutPage.getConfirmationMessage();
 })
